@@ -4,12 +4,12 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.algaworks.model.Venda;
+import com.algaworks.model.Vendedor;
 
 @Repository
-public interface VendaRepository extends JpaRepository<Venda, Long>{
+public interface VendedorRepository extends JpaRepository<Vendedor, Long>{
 
-	List<Venda> findAll();
+	List<Vendedor> findAll();
 
 	
 

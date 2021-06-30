@@ -12,33 +12,32 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.algaworks.model.Venda;
-import com.algaworks.repository.VendaRepository;
+import com.algaworks.model.Vendedor;
+import com.algaworks.repository.VendedorRepository;
 
 @RestController
-@RequestMapping("/vendas")
-public class VendaController {
+@RequestMapping("/vendedores")
+public class VendedorController {
 	@Autowired 
-	private VendaRepository vendaRepository;	
-	
+	private VendedorRepository vendedorRepository;	
 	// #########MEtodo para listar os vendedores #################
 		@GetMapping
-		public List <Venda> listar() {
-			return vendaRepository.findAll();						 		
+		public List <Vendedor> listar() {
+			return vendedorRepository.findAll();						 		
 		}
-		// #########MEtodo para listar os venda pelo ID#################
-		@GetMapping("/{id}")
-		public Optional<Venda> listarId(@PathVariable(value="id") long id) {
-			return vendaRepository.findById(id);						 		
+		// #########MEtodo para listar os vendedores pelo ID#################
+		@GetMapping("/{id_vendedor}")
+		public Optional<Vendedor> listarId(@PathVariable(value="id_vendedor") long id_vendedor) {
+			return vendedorRepository.findById(id_vendedor);						 		
 		} 
 			
   
 		
-		// #########MEtodo para adicionar as vendas #################
+		// #########MEtodo para adicionar as Vendedor #################
 		@PostMapping						
 		@ResponseStatus(HttpStatus.CREATED)
-		public Venda adicionar(@RequestBody Venda venda) {
-			return vendaRepository.save(venda);
+		public Vendedor adicionar(@RequestBody Vendedor vendedor) {
+			return vendedorRepository.save(vendedor);
 		}
 
 
