@@ -29,9 +29,7 @@ public class VendedorController {
 			
 			for (int i=0; i < a; ++i) {
 				String b = vendedorRepository.findAll().get(i).toString();   // esse comando acessa a arrayList e retorna outra array list[com 6 variaveis]
-				for (id_vendedor a: this.vendedorRepository.findAll()) {
-					
-				}
+				
 			}
 			
 			
