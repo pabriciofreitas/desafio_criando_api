@@ -24,13 +24,13 @@ public class VendedorController {
 	// #########MEtodo para listar os vendedores #################
 		@GetMapping
 		public List <Vendedor> listar() {
-		
+			/*
 			int a = vendedorRepository.findAll().size(); // Isso retorna o tamanho da lista  que nesse caso é 1
 			
 			for (int i=0; i < a; ++i) {
 				String b = vendedorRepository.findAll().get(i).toString();   // esse comando acessa a arrayList e retorna outra array list[com 6 variaveis]
 				
-			}
+			}*/
 			
 			
 			return vendedorRepository.findAll();

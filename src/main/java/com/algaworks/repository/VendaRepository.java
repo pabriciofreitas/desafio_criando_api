@@ -8,11 +8,5 @@ import com.algaworks.model.Venda;
 
 @Repository
 public interface VendaRepository extends JpaRepository<Venda, Long>{
-
 	List<Venda> findAll();
-
-	
-
-	
-
 }

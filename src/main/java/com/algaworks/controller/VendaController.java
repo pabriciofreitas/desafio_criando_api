@@ -32,9 +32,7 @@ public class VendaController {
 			return vendaRepository.findById(id);						 		
 		} 
 			
-  
-		
-		// #########MEtodo para adicionar as vendas #################
+		// #########MEtodo para adicionar as vendas ################# ///
 		@PostMapping						
 		@ResponseStatus(HttpStatus.CREATED)
 		public Venda adicionar(@RequestBody Venda venda) {

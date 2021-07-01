@@ -1,7 +1,7 @@
 package com.algaworks.model;
 import java.io.Serializable;
 import java.sql.Date;
-//import java.time.LocalDate;
+import java.time.LocalDate;
 import java.util.Objects;
 
 import javax.persistence.Column;
