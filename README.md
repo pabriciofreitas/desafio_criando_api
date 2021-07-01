@@ -2,7 +2,7 @@
 Para testa api: há uma arquivo chamado teste.jar é só executa ele no termina que api estára online para testa a primeira parte do desafio que é criar uma vendas usei Postman com metodo POST. 
 
 <p align="center">
-    <img width="1920" height="1080" src="exemplo.">
+    <img width="1920" height="1080" src="exemplo.png">
 </p>
 
 
