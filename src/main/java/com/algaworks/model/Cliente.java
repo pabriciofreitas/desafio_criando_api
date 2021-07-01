@@ -1,5 +1,6 @@
 package com.algaworks.model;
 
+import java.sql.Date;
 import java.util.Objects;
 
 import javax.persistence.Column;
@@ -14,10 +15,11 @@ import lombok.Data;
 // esta se criando uma tabela Cliente no DB com conluna ID autoIncrementavel pelo DB e coluna nome.
 public class Cliente {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY) ///estrategia para geração de ID
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@Column(nullable = false) // não pode ser null
-	private String nome;
+	
+	@Column(nullable = false) 
+	private Date data;
 	
 
 }
