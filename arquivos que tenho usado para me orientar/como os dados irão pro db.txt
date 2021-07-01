@@ -1,0 +1,10 @@
+{
+   
+        "data":"2000-06-19",
+        "valor": 10.01,
+        "id_vendedor": 1,
+        "nome_vendedor": "pabricio"
+
+
+
+}
